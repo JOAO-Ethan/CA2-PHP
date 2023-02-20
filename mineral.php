@@ -17,7 +17,7 @@ $statement2->closeCursor();
 <main class="container mx-auto mt-3 mb-3 text-center">
     <div class="border border-dark w-50 mx-auto bg-secondary rounded">
     <h1 class="mx-auto"><?php echo $mineral["name"]; ?></h1>
-    <img class="mx-auto" src="<?php echo $mineral["picturePath"] ?>">
+    <img class="mx-auto img-responsive rounded" src="<?php echo $mineral["picturePath"] ?>">
     <div class="mx-auto mt-1">Chemical Formula : <?php echo $mineral["chemical_formula"]; ?></div>
     <div class="mx-auto mt-1">Crystal System : <?php echo $system["name"]; ?></div>
     <div class="mx-auto mt-1">Hardness : <?php if ($mineral["minHardness"] != $mineral["maxHardness"]) {
