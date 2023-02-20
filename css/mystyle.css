@@ -1,1 +1,10 @@
 /* Add your own CSS under here */
+.card.bg-light.text-info>a{
+    text-decoration: none;
+}
+
+.card.bg-light.text-info>a:hover{
+    background-color : #6c757d !important;
+    color: #fff !important;
+    border-radius : 0.25rem !important;
+}
