@@ -1,10 +1,11 @@
 /* Add your own CSS under here */
-.card.bg-light.text-info>a{
+.card.bg-light>a{
     text-decoration: none;
+    color: #6c757d;
 }
 
-.card.bg-light.text-info>a:hover{
+.card.bg-light>a:hover{
     background-color : #6c757d !important;
-    color: #fff !important;
+    color: #f8f9fa !important;
     border-radius : 0.25rem !important;
 }
