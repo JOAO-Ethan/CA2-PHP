@@ -36,4 +36,6 @@ VALUES (1,'Isometric'),
 
 INSERT INTO `mineral`(`name`,`chemical_formula`,`crystalSystemID`,`minHardness`, `maxHardness`,`picturePath`)
 VALUES ('Beryl','Be<sub>3</sub>Al<sub>2</sub>Si<sub>6</sub>O<sub>18</sub>',3,7.5,8,'images/beryl.jpg'),
-       ('Quartz','SiO<sub>2</sub>',4,7,7,'images/amethyst.jpg');
+       ('Quartz','SiO<sub>2</sub>',4,7,7,'images/amethyst.jpg'),
+       ('Diamond', 'C',1,10,10,'images/diamond.jpg'),
+       ('Vanadinite','Pb<sup>2+</sup><sub>5</sub>(V<sup>5+</sup>O<sub>4</sub>)<sub>3</sub>Cl',3,2.5,3,'images/vanadinite.jpg');
