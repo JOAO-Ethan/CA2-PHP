@@ -1,4 +1,9 @@
 <?php include "templates/header.php";
+if(empty($_GET["id"])){
+    header( "refresh:2;url=mineral_list.php" );
+    echo '<h3 class="text-center mt-3">No id given, return to selection page in 2s...</h3>';
+}
+
 $mineralID = $_GET["id"];
 $query = "SELECT * FROM mineral WHERE id =" . $mineralID;
 $statement = $db->prepare($query);
@@ -14,10 +19,10 @@ $statement2->setFetchMode(PDO::FETCH_ASSOC);
 $system = $statement2->fetch();
 $statement2->closeCursor();
 ?>
-<main class="container mx-auto mt-3 mb-3 text-center">
+<main class="container mx-auto mt-3 mb-3 text-center text-light">
     <div class="border border-dark w-50 mx-auto bg-secondary rounded">
     <h1 class="mx-auto"><?php echo $mineral["name"]; ?></h1>
-    <img class="mx-auto img-responsive rounded" src="<?php echo $mineral["picturePath"] ?>">
+    <img class="mx-auto img-responsive rounded w-75" src="<?php echo $mineral["picturePath"] ?>">
     <div class="mx-auto mt-1">Chemical Formula : <?php echo $mineral["chemical_formula"]; ?></div>
     <div class="mx-auto mt-1">Crystal System : <?php echo $system["name"]; ?></div>
     <div class="mx-auto mt-1">Hardness : <?php if ($mineral["minHardness"] != $mineral["maxHardness"]) {
