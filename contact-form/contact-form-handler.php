@@ -5,7 +5,12 @@ $myemail = 'd00263493@student.dkit.ie';// <-----Put your DkIT email address here
 if(empty($_POST['name'])  ||
    empty($_POST['email']) ||
    empty($_POST['message']) ||
-    empty($_POST['phone'])
+    empty($_POST['phone'] ||
+    empty($_POST['request']) ||
+    empty($_POST['country'])||
+        empty($_POST['city'])||
+        empty($_POST['street']) ||
+    emptyy($_POST['pc']))
 )
 {
     $errors .= "\n Error: all fields are required";
@@ -21,6 +26,10 @@ $name = $_POST['name'];
 $email_address = $_POST['email'];
 $message = $_POST['message'];
 $phone = $_POST['phone'];
+$request = $_POST['request'];
+$city = $_POST['city'];
+$street = $_POST['street'];
+$postal_code = $_POST['pc'];
 
 if (!preg_match(
 "/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i",
@@ -40,7 +49,7 @@ if( empty($errors))
         $to = $myemail;
         $email_subject = "Contact form submission: $name";
         $email_body = "You have received a new message. ".
-        " Here are the details:\n Name: $name \n Email: $email_address \n Phone : $phone \n Message \n $message";
+        " Here are the details:\n Name: $name \n Email: $email_address \n Phone : $phone \n Request : $request \n Address : $street, $city, $postal_code \n Message \n $message";
 
         mail($to,$email_subject,$email_body,$headers);
         //redirect to the 'thank you' page
