@@ -12,10 +12,9 @@ $nb = 0;
             <div class="container">
                 <div class="row align-items-center mb-3 mx-auto">
                     <?php foreach ($minerals as $mineral) :
-                        if ($nb == 2) {
+                        if ($nb % 2 == 0) {
                             echo '</div>';
                             echo '<div class="row align-items-center mb-3 mx-auto">';
-                            $nb = 0;
                         }
                         include "templates/card.php";
                         $nb++;
