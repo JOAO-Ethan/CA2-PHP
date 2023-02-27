@@ -38,4 +38,7 @@ INSERT INTO `mineral`(`name`,`chemical_formula`,`crystalSystemID`,`minHardness`,
 VALUES ('Beryl','Be<sub>3</sub>Al<sub>2</sub>Si<sub>6</sub>O<sub>18</sub>',3,7.5,8,'images/beryl.jpg'),
        ('Quartz','SiO<sub>2</sub>',4,7,7,'images/amethyst.jpg'),
        ('Diamond', 'C',1,10,10,'images/diamond.jpg'),
-       ('Vanadinite','Pb<sup>2+</sup><sub>5</sub>(V<sup>5+</sup>O<sub>4</sub>)<sub>3</sub>Cl',3,2.5,3,'images/vanadinite.jpg');
+       ('Vanadinite','Pb<sup>2+</sup><sub>5</sub>(V<sup>5+</sup>O<sub>4</sub>)<sub>3</sub>Cl',3,2.5,3,'images/vanadinite.jpg'),
+       ('Aragonite','CaCO<sub>3</sub>',2,3.5,4,'images/aragonite.jpg'),
+       ('Pyrite','Fe<sup>2+</sup>(S<sub>2</sub>)<sup>2-</sup>',1,6,6.5,'images/pyrite.jpg'),
+       ('Baryte','BaS<sup>6+</sup>O<sub>4</sub>',2,3,3,'images/baryte.jpg');
