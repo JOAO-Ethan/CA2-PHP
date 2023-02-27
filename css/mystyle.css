@@ -9,3 +9,9 @@
     color: #f8f9fa !important;
     border-radius : 0.25rem !important;
 }
+
+.card.bg-light>a>.card-body>.card-img.img-responsive{
+    display: block;
+    width: auto;
+    max-height: 80%;
+}
