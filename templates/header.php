@@ -33,10 +33,11 @@
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="contact.php">Contact Us</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="page-3.php">Page 3</a>
-              </li>
             </ul>
+                <form class="d-flex mx-3 h-25" method="POST" action="search.php">
+                    <input type="text" class="form-control mx-4" name="name" placeholder="Search for mineral species">
+                    <input type="submit" class="btn btn-info" value="Submit">
+                </form>
           </span>
         </div>
     </div>
