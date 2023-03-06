@@ -10,9 +10,9 @@ $nb = 0;
         <div class="starter-template text-center">
             <h1>Minerals List</h1>
             <div class="container">
-                <div class="row align-items-center mb-3 mx-auto">
+                <div class="row align-items-center mx-auto">
                     <?php foreach ($minerals as $mineral) :
-                        if ($nb % 2 == 0) {
+                        if ($nb % 3 == 0) {
                             echo '</div>';
                             echo '<div class="row align-items-center mb-3 mx-auto">';
                         }

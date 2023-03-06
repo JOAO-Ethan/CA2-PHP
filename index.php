@@ -1,5 +1,5 @@
 <?php include "templates/header.php";
-$query = 'SELECT id, name, picturePath FROM mineral ORDER BY RAND() LIMIT 3';
+$query = 'SELECT id, name, picturePath FROM mineral ORDER BY RAND() LIMIT 6';
 $statement = $db->prepare($query);
 $statement->execute();
 $minerals = $statement->fetchAll();
