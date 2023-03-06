@@ -15,3 +15,7 @@
     width: auto;
     max-height: 80%;
 }
+
+a.link-light.text-decoration-none:hover{
+    color:  #adb5bd !important;
+}
