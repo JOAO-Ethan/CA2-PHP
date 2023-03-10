@@ -1,4 +1,5 @@
-<?php include "templates/header.php";
+<?php session_start();
+include "templates/header.php";
 $counties = ["Carlow",
     "Cavan",
     "Clare",
@@ -36,8 +37,10 @@ $counties = ["Carlow",
 
         <p class="text-danger">
             <?php
-            if (!empty($errors)) {
-                echo nl2br($errors);
+            if (!empty($_SESSION['errors'])) {
+                echo nl2br($_SESSION['errors']);
+                session_unset();
+                session_destroy();
             }
             ?>
         </p>
@@ -52,7 +55,7 @@ $counties = ["Carlow",
             </div>
             <div class="row mb-1">
                 <label class="col-sm-2 col-form-label" for="phone">Phone number<span class="text-danger">*</span></label>
-                <div class="col-sm-10"><input class="form-control" type="tel" name="phone"
+                <div class="col-sm-10"><input class="form-control" type="tel" name="phone" placeholder="0XX XXX XXXX"
                                               pattern="0[0-9]{2} [0-9]{3} [0-9]{4}" required></div>
             </div>
             <div class="row mb-1">
@@ -98,7 +101,7 @@ $counties = ["Carlow",
                         <label class="col-3" for="street">Street name & number<span class="text-danger">*</span></label>
                         <input class="col form-control" type="text" name="street" required>
                         <label class="col-sm-2" for="pc">Postal Code<span class="text-danger">*</span></label>
-                        <input class="col form-control" type="text" name="pc" pattern="[A-Z][0-9]{2} [A-Z0-9]{4}" required>
+                        <input class="col form-control" type="text" name="pc" pattern="[A-Z][0-9]{2} [A-Z0-9]{4}" placeholder="eg. A01 2345" required>
                     </div>
                 </div>
             </div>

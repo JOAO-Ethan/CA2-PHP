@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 function validate($data): string
 {
     return htmlspecialchars(stripslashes($data));
@@ -64,7 +64,7 @@ if(!preg_match("/^[A-Z][0-9]{2} [A-Z0-9]{4}$/i", $postal_code)){
     $errors.="\n Error : Invalid postal code";
 }
 
-if( empty($errors))
+if(empty($errors))
 {
         $to = $myemail;
         $email_subject = "Contact form submission: $name";
@@ -75,5 +75,6 @@ if( empty($errors))
         //redirect to the 'thank you' page
         header('Location: contact-form-thank-you.php');
 }
-include "contact.php";
+$_SESSION['errors'] = $errors;
+header('Location: contact.php');
 ?>
