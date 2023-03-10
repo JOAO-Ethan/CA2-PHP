@@ -10,7 +10,7 @@ $statement->closeCursor(); ?>
     </div>
     <main class="container">
         <div class="starter-template text-center">
-            <p class="lead">Welcome to our website ! We provide some information about mineral species. If you want to
+            <p class="lead p-3">Welcome to our website ! We provide some information about mineral species. If you want to
                 browse the ones we currently have, please go to the Mineral List page !
                 Remember that no mineral have "magical" properties that can cure you. The only properties mineral
                 species have are their chemicophysical ones (eg. quartz is piezoelectric, uranium is radioactive, lead
