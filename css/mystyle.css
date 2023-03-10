@@ -19,3 +19,20 @@
 a.link-light.text-decoration-none:hover{
     color:  #adb5bd !important;
 }
+
+#banner{
+    width: 100%;
+    height: 400px !important;
+    object-fit: cover !important;
+}
+
+#head{
+    padding: 0 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+}
+
+.carousel-item>a>img{
+    max-height: 400px !important;
+    border-radius : 0.25rem !important;
+}
