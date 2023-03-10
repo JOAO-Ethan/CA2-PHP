@@ -33,6 +33,9 @@
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="contact.php">Contact Us</a>
               </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="random_mineral.php">Random Mineral</a>
+                </li>
             </ul>
                 <form class="d-flex mx-3 h-25" method="POST" action="search.php">
                     <input type="text" class="form-control mx-4" name="name" placeholder="Search for mineral species">
