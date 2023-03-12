@@ -19,7 +19,7 @@ $statement->closeCursor(); ?>
         </div>
         <div class="text-center mb-4">
             <h3>Some of our species</h3>
-            <div id="mineralCarousel" class="carousel-slide" data-bs-ride="carousel">
+            <div id="mineralCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <?php foreach ($minerals as $mineral) : ?>
                         <div class="carousel-item <?php if ($mineral == $minerals[0]) echo 'active'; ?>" data-bs-interval="2000">

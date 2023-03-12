@@ -10,7 +10,7 @@
     border-radius : 0.25rem !important;
 }
 
-.card.bg-light>a>.card-body>.card-img.img-responsive{
+.card.bg-light>a>.card-body>.card-img.img-fluid{
     display: block;
     width: auto;
     max-height: 80%;
